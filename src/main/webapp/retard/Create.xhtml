@@ -12,8 +12,7 @@
             <h:form id="RetardCreateForm">
                 <h:panelGroup id="display">
                     <p:panelGrid columns="2" rendered="#{retardController.selected != null}">
-                        <p:outputLabel value="#{bundle.CreateRetardLabel_id}" for="id" />
-                        <p:inputText id="id" value="#{retardController.selected.id}" title="#{bundle.CreateRetardTitle_id}" />
+                       
                         <p:outputLabel value="#{bundle.CreateRetardLabel_description}" for="description" />
                         <p:inputText id="description" value="#{retardController.selected.description}" title="#{bundle.CreateRetardTitle_description}" />
                         <p:outputLabel value="#{bundle.CreateRetardLabel_nombreHeure}" for="nombreHeure" />

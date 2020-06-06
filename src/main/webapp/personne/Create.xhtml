@@ -11,9 +11,7 @@
         <p:dialog id="PersonneCreateDlg" widgetVar="PersonneCreateDialog" modal="true" resizable="false" appendTo="@(body)" header="#{bundle.CreatePersonneTitle}">
             <h:form id="PersonneCreateForm">
                 <h:panelGroup id="display">
-                    <p:panelGrid columns="2" rendered="#{personneController.selected != null}">
-                        <p:outputLabel value="#{bundle.CreatePersonneLabel_id}" for="id" />
-                        <p:inputText id="id" value="#{personneController.selected.id}" title="#{bundle.CreatePersonneTitle_id}" />
+                    <p:panelGrid columns="4" rendered="#{personneController.selected != null}">
                         <p:outputLabel value="#{bundle.CreatePersonneLabel_matricule}" for="matricule" />
                         <p:inputText id="matricule" value="#{personneController.selected.matricule}" title="#{bundle.CreatePersonneTitle_matricule}" />
                         <p:outputLabel value="#{bundle.CreatePersonneLabel_cin}" for="cin" />
